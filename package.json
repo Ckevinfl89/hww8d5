@@ -1,0 +1,25 @@
+{
+  "name": "hw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run bundle && npm-run-all --parallel watch serve",
+    "bundle": "webpack",
+    "watch": "webpack --watch",
+    "serve": "cd dist && live-server --port=6500"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@types/uuid": "^9.0.3",
+    "uuid": "^9.0.0"
+  },
+  "description": ""
+}
